@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.console-container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.console-container .console-background video
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.console-container .console-content .squadLogo
+{
+    position: fixed;
+    top: 0;
+    right: 4%;
+    z-index: 5;
+    font-size: 16px;
+    font-family: "myFont";
+    text-shadow: 0 0 5px white,
+    0 0 12px white;
+}
+
+.console-container .console-content .buttons 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    
+    position: relative;
+}
+
+.console-container .console-content .buttons  .button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 70px;
+    background-color: rgba(129, 129, 129, 0.505);
+    color:  rgb(0, 0, 0);
+    font-size: 10px;
+    text-shadow: 0 0 5px white,
+    0 0 10px white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 2px solid grey;
+    margin: 10px;
+    backface-visibility: hidden;
+}
+
+
+.console-container .console-content .buttons  .button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 10px;
+    z-index: -1;
+    background: linear-gradient(90deg, transparent, rgb(0, 0, 0), transparent);
+    animation: borderRotate 2s linear infinite;
+    pointer-events: none; 
+}
+
+.console-container .console-content .buttons  .button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(128, 128, 128, 0);
+    border-radius: 10px;
+    z-index: -2;
+    /* border: 2px grey solid; */
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5);
+}
+
+.console-container .console-content .buttons  .button p {
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 25px;
+    text-transform: uppercase; 
+}
+
+.console-container .console-content .buttons  .button:hover {
+    transform: scale(1.4);
+    z-index: 5;
+}
+
+.console-container .console-content .buttons .button:hover p {
+    transform: translateX(-100%);
+    left: 160px;
+}
+
+/* Keyframes for rotating border */
+@keyframes borderRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,99 @@
+body{
+    color: white;
+    width: 100dvw;
+}
+.memory-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.mainContainer .bg img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    left: 0;
+    z-index: -5;
+}
+.title{
+    font-size: 20px;
+    position: relative;
+    top: -30px;
+}
+.memory-content{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -35px;
+}
+.memorydata{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.memorydata .image{
+    width:850px;
+    height: 100%;
+    background-color: white ;
+    border-radius: 10px;
+}
+.memorydata .text{
+    width: 260px;
+    background-color: rgba(254, 254, 254, 0.4);
+    height: 70%;
+    left: -4%;
+    bottom: -10%;
+    position:relative;
+    border-radius: 10px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.memo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.memorydata .image img{
+    width:850px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.memorydata .text h1
+{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.memorydata .text hr{
+    width: 80%;
+    margin-top: 0;
+    position: relative;
+}
+.memorydata .text p
+{
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}

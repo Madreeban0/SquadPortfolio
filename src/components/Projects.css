@@ -1,0 +1,41 @@
+.bg img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    left: 0;
+    z-index: -5;
+}
+.Project-container h1
+{
+    text-transform: uppercase;
+    text-shadow: 0 0 5px white,
+    0 0 15px white;
+}
+
+.Project-container .tittle h1{
+    position: absolute;
+    top: 10px;
+    text-align: center;
+}
+.Project-container .tittle
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Project-container .squadLogo{
+    position:fixed;
+    color: white;
+    top: 0;
+    right: 0;
+    margin: 1%;
+    font-size: 15px;
+    font-family: "myFont";
+    text-shadow: 0 0 5px white,
+    0 0 10px white;
+    margin-right: 30px;
+    z-index: 5;
+}
