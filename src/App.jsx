@@ -2,7 +2,7 @@ import Console from "./components/Console";
 import HomePage from "./components/HomePage"
 //Using Router for navigation function
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Members from "./components/members";
+import Members from "./components/Members";
 import mentordata from "./components/MentorsData"
 import SquadMatesdata from "./components/SquadMates"
 import Memories from "./components/Memories";
